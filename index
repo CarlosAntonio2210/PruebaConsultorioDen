@@ -1,0 +1,1027 @@
+<head>
+    <!-- META TAGS PARA SEO LOCAL -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Dental Sonrisa Perfecta – Apizaco, Tlaxcala | Limpiezas, Ortodoncia e Implantes</title>
+    <meta name="description" content="Consultorio dental en Apizaco, Tlaxcala. Limpiezas desde $400, ortodoncia, implantes y urgencias. ¡Agenda tu cita hoy! Atención personalizada.">
+    <meta name="keywords" content="dentista Apizaco, consultorio dental Tlaxcala, limpieza dental, ortodoncia Apizaco, implantes dentales">
+    
+    <!-- OPEN GRAPH PARA REDES SOCIALES -->
+    <meta property="og:title" content="Consultorio Dental Sonrisa Perfecta – Apizaco, Tlaxcala">
+    <meta property="og:description" content="Tu sonrisa sana y bonita en Apizaco. Limpiezas, ortodoncia e implantes.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/00AEEF/FFFFFF?text=Sonrisa+Perfecta">
+    <meta property="og:url" content="https://sonrisaperfecta.com">
+    
+    <style>
+        /* ===== RESET Y VARIABLES CSS ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #00AEEF;
+            --secondary-color: #4CAF50;
+            --accent-color: #FF6B35;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --gray: #6C757D;
+            --dark-gray: #343A40;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            overflow-x: hidden;
+        }
+
+        /* ===== BOTONES ===== */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary-color), #0099CC);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0099CC 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffffff20"><path d="M0 0 Q250 100 500 0 T1000 0 V100 H0 Z"/></svg>');
+            animation: wave 20s linear infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-25%); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero-image {
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* ===== SECCIONES GENERALES ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: var(--dark-gray);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+
+        /* ===== SERVICIOS ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin: 0 auto 20px;
+        }
+
+        /* ===== TESTIMONIOS ===== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-color);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: serif;
+        }
+
+        .testimonial p {
+            margin-left: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* ===== PROMOCIONES VIRALES ===== */
+        .promo-section {
+            background: linear-gradient(135deg, var(--secondary-color), #45A049);
+            color: white;
+        }
+
+        .promo-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .promo-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .vip-card {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 90vw;
+            max-width: 400px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 40px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            z-index: 10000;
+            transition: all 0.3s ease;
+        }
+
+        .vip-card.active {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .vip-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* ===== FAQ ACORDEÓN ===== */
+        .faq-item {
+            border-bottom: 1px solid var(--light-gray);
+            margin-bottom: 15px;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 200px;
+            padding-bottom: 20px;
+        }
+
+        /* ===== FORMULARIO ===== */
+        .contact-form {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #E9ECEF;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        /* ===== BOTONES FLOTANTES ===== */
+        .whatsapp-float,
+        .chatbot-toggle {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            box-shadow: var(--shadow-hover);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float {
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .chatbot-toggle {
+            bottom: 20px;
+            left: 20px;
+            background: var(--primary-color);
+        }
+
+        /* ===== CHATBOT ===== */
+        .chatbot {
+            position: fixed;
+            bottom: 90px;
+            left: 20px;
+            width: 350px;
+            max-width: 90vw;
+            height: 500px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow-hover);
+            transform: scale(0);
+            transform-origin: bottom left;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chatbot.active {
+            transform: scale(1);
+        }
+
+        .chatbot-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: var(--light-gray);
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 80%;
+        }
+
+        .message.bot {
+            background: var(--primary-color);
+            color: white;
+            margin-left: auto;
+        }
+
+        .message.user {
+            background: white;
+            color: var(--dark-gray);
+            margin-right: auto;
+        }
+
+        .chatbot-input {
+            padding: 20px;
+            border-top: 1px solid #E9ECEF;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #E9ECEF;
+            border-radius: 25px;
+            outline: none;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark-gray);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+            
+            .whatsapp-float,
+            .chatbot-toggle {
+                width: 55px;
+                height: 55px;
+                font-size: 1.3rem;
+            }
+            
+            .chatbot {
+                width: 95vw;
+                left: 2.5vw;
+                bottom: 85px;
+            }
+        }
+
+        /* ===== UTILIDADES ===== */
+        .text-center { text-align: center; }
+        .mb-4 { margin-bottom: 1.5rem; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); }
+    </style>
+</head>
+<body>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🦷 Sonrisa Sana y Bonita en Apizaco</h1>
+            <p>Limpiezas, ortodoncia e implantes con atención personalizada. ¡Tu sonrisa vale la pena!</p>
+            <a href="https://wa.me/5212221234567?text=Hola!%20Quiero%20agendar%20mi%20cita%20en%20Consultorio%20Dental%20Sonrisa%20Perfecta" 
+               class="btn btn-primary" target="_blank">
+                📱 Agendar Cita Ahora
+            </a>
+            <div class="hero-image">😁</div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Tratamientos modernos con tecnología de punta para toda la familia</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🪥</div>
+                    <h3>Limpieza Dental</h3>
+                    <p>Profilaxis profesional para eliminar sarro y bacterias. Previene caries y enfermedades periodontales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🦷</div>
+                    <h3>Ortodoncia</h3>
+                    <p>Brackets tradicionales e Invisalign. Sonrisas perfectas para todas las edades.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔩</div>
+                    <h3>Implantes Dentales</h3>
+                    <p>Solución permanente para dientes faltantes. Tecnología suiza de alta precisión.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Urgencias Dentales</h3>
+                    <p>Atendemos dolor, fracturas e infecciones los 7 días de la semana.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Odontología Infantil</h3>
+                    <p>Atención cariñosa para los más pequeños. Primeras visitas sin miedo.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🫀</div>
+                    <h3>Endodoncia</h3>
+                    <p>Tratamiento de conductos con anestesia computarizada. ¡Sin dolor!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE NOSOTROS ===== -->
+    <section id="sobre">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <h2 class="section-title" style="text-align: left;">Sobre Consultorio Dental Sonrisa Perfecta</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">
+                        Desde 2015 atendiendo a las familias de Apizaco con amor y profesionalismo. 
+                        Nuestro equipo de odontólogos certificados utiliza tecnología de punta 
+                        para ofrecerte tratamientos de calidad mundial a precios accesibles.
+                    </p>
+                    <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8;">
+                        <strong>Nos distingue:</strong> Trato humano, esterilización al 100%, 
+                        pagos a plazos sin intereses y atención a domicilio para urgencias.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary">Conoce Más →</a>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div style="height: 200px; background: var(--light-gray); border-radius: 15px;"></div>
+                    <div style="height: 200px; background: var(--light-gray); border-radius: 15px;"></div>
+                    <div style="height: 200px; background: var(--light-gray); border-radius: 15px;"></div>
+                    <div style="height: 200px; background: var(--light-gray); border-radius: 15px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section id="testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"Muy buena atención, me quitó el dolor de muela en 30 minutos. ¡Excelente servicio!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MG</div>
+                        <div>
+                            <strong>María González</strong><br>
+                            <small>Hace 2 días</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Mi hijo tenía miedo pero el Dr. fue súper paciente. Ahora le encanta ir al dentista."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JL</div>
+                        <div>
+                            <strong>Juan López</strong><br>
+                            <small>Hace 5 días</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Implante dental perfecto. En 3 meses ya estaba comiendo normal. ¡Recomendado 100%!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div>
+                            <strong>Ana Sánchez</strong><br>
+                            <small>Hace 1 semana</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROMOCIONES VIRALES ===== -->
+    <section id="promociones" class="promo-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">🎉 Promociones Especiales</h2>
+            <div class="promo-cards">
+                <div class="promo-card">
+                    <h3>🫂 Trae a un Amigo</h3>
+                    <p style="font-size: 1.1rem; margin: 20px 0;">
+                        <strong>¡Ambos reciben 15% de descuento en limpieza dental!</strong>
+                    </p>
+                    <a href="https://wa.me/5212221234567?text=Hola!%20Mi%20amigo%20y%20yo%20queremos%20la%20promo%20de%20trae%20un%20amigo%20para%20limpieza%20dental" 
+                       class="btn btn-primary" target="_blank" style="background: white; color: var(--secondary-color);">
+                        📱 Compartir Promoción
+                    </a>
+                </div>
+                <div class="promo-card">
+                    <h3>👑 Generar mi Carnet VIP</h3>
+                    <p style="font-size: 1.1rem; margin: 20px 0;">
+                        Obtén <strong>10% descuento permanente</strong> en todos tus tratamientos
+                    </p>
+                    <button onclick="generarVIP()" class="btn btn-primary" style="background: white; color: var(--secondary-color);">
+                        ✨ Generar Carnet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto cuesta una limpieza dental?</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La limpieza dental tiene un precio aproximado de <strong>$400–$600 MXN</strong>, dependiendo de la complejidad. Incluye ultrasonido, pulido y flúor.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Tienen horarios sábados?</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, atendemos <strong>sábados de 9:00 a 14:00</strong>. Perfecto para quienes trabajan entre semana.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto cuesta ortodoncia?</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Brackets metálicos desde <strong>$18,000 MXN</strong> (pago a plazos). Invisalign desde <strong>$45,000 MXN</strong>. Valoración gratuita.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Necesito cita previa?</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, todas las consultas requieren cita. Así garantizamos tu atención sin esperas. ¡Agenda por WhatsApp!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Aceptan seguros médicos?</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, trabajamos con <strong>mayoristas seguros</strong> y ofrecemos facturación electrónica para reembolso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORMULARIO DE CONTACTO ===== -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="section-title">Agenda tu Cita</h2>
+            <p class="section-subtitle">Llena el formulario o contáctanos por WhatsApp</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label>Nombre completo</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Teléfono / WhatsApp</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label>Servicio de interés</label>
+                    <select id="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="limpieza">Limpieza dental</option>
+                        <option value="ortodoncia">Ortodoncia</option>
+                        <option value="implantes">Implantes dentales</option>
+                        <option value="urgencias">Urgencias</option>
+                        <option value="infantil">Odontología infantil</option>
+                        <option value="endodoncia">Endodoncia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Mensaje (opcional)</label>
+                    <textarea rows="4" id="mensaje" placeholder="¿Cuándo prefieres tu cita? ¿Algún dolor actual?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px;">
+                    📅 Enviar y Agendar Cita
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Consultorio Dental Sonrisa Perfecta</h3>
+                    <p>Tu dentista de confianza en Apizaco, Tlaxcala</p>
+                </div>
+                <div>
+                    <h3>📍 Dirección</h3>
+                    <p>Av. Independencia #456<br>Col. Centro, Apizaco, Tlaxcala<br>CP 90300</p>
+                </div>
+                <div>
+                    <h3>📱 Contacto</h3>
+                    <p>Tel: (222) 123-4567<br>WhatsApp: <a href="https://wa.me/5212221234567" style="color: var(--primary-color);">222-123-4567</a></p>
+                </div>
+                <div>
+                    <h3>🕒 Horario</h3>
+                    <p>Lun-Vie: 9:00 - 20:00<br>Sáb: 9:00 - 14:00<br>Dom: Citas especiales</p>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 30px; border-top: 1px solid var(--gray); color: var(--gray);">
+                <p>&copy; 2024 Consultorio Dental Sonrisa Perfecta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTONES FLOTANTES ===== -->
+    <a href="https://wa.me/5212221234567?text=Hola!%20Vi%20su%20página%20web%20y%20quiero%20más%20información" 
+       class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+        📱
+    </a>
+
+    <div class="chatbot-toggle" onclick="toggleChatbot()" title="Chat con asistente">
+        💬
+    </div>
+
+    <!-- ===== CHATBOT ===== -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <span>🤖 Asistente Dental</span>
+            <button onclick="toggleChatbot()" style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot">¡Hola! 👋 ¿En qué puedo ayudarte con tu sonrisa? 😁</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatInput" placeholder="Escribe tu pregunta..." onkeypress="handleChatEnter(event)">
+            <button onclick="sendChatMessage()">➤</button>
+        </div>
+    </div>
+
+    <!-- ===== MODAL CARNET VIP ===== -->
+    <div class="vip-card" id="vipCard">
+        <h3>👑 ¡Tu Carnet VIP está listo!</h3>
+        <div id="vipContent" style="background: white; color: var(--dark-gray); padding: 30px; border-radius: 15px; margin: 20px 0;">
+            <div style="font-size: 3rem; margin-bottom: 20px;">⭐</div>
+            <h4>CLIENTE VIP</h4>
+            <p><strong id="vipNombre">Tu Nombre</strong></p>
+            <p>Tel: <span id="vipTelefono">-</span></p>
+            <div style="background: var(--accent-color); color: white; padding: 10px; border-radius: 10px; margin: 20px 0; font-weight: bold;">
+                10% DESCUENTO PERMANENTE
+            </div>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Válido en todos los tratamientos</p>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <a href="#" onclick="shareVIP()" class="btn btn-whatsapp" style="flex: 1;">
+                📱 Compartir en WhatsApp
+            </a>
+            <button onclick="closeVIP()" class="btn btn-secondary" style="padding: 12px 20px;">✕</button>
+        </div>
+    </div>
+
+    <!-- ===== OVERLAY PARA MODALES ===== -->
+    <div id="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; display: none;"></div>
+
+    <script>
+        // ===== VARIABLES EDITABLES FÁCILMENTE =====
+        // CAMBIA ESTOS VALORES PARA PERSONALIZAR:
+        const CONFIG = {
+            nombreConsultorio: "Consultorio Dental Sonrisa Perfecta",
+            telefono: "522221234567", // Sin + o guiones para WhatsApp
+            whatsappLink: "https://wa.me/5212221234567",
+            direccion: "Av. Independencia #456, Col. Centro, Apizaco, Tlaxcala",
+            servicios: [
+                { nombre: "Limpieza dental", precio: "$400–$600 MXN" },
+                { nombre: "Ortodoncia", precio: "desde $18,000 MXN" },
+                { nombre: "Implantes", precio: "por evaluación" }
+            ]
+        };
+
+        // ===== CHATBOT - FÁCIL DE EXPANDIR =====
+        const chatbotResponses = {
+            'hola': '¡Hola! 😁 Bienvenido a Consultorio Dental Sonrisa Perfecta en Apizaco. ¿En qué puedo ayudarte hoy?',
+            'limpieza': 'La limpieza dental cuesta aproximadamente <strong>$400–$600 MXN</strong>. Incluye ultrasonido, pulido y flúor. ¿Quieres agendar?',
+            'ortodoncia': '¡Sí! Ofrecemos brackets e Invisalign. Brackets desde <strong>$18,000 MXN</strong> a plazos. ¿Te interesa una valoración gratuita?',
+            'implantes': 'Tenemos implantes de alta calidad. El precio depende de la cantidad y tipo. Te damos valoración gratuita.',
+            'sabado': '¡Sí! Atendemos <strong>sábados de 9:00 a 14:00</strong>. Perfecto para quienes trabajan entre semana.',
+            'precio': 'Los precios varían según el tratamiento. Limpieza: $400-600, ortodoncia desde $18,000. ¿Qué servicio te interesa?',
+            'cita': '¡Perfecto! Puedes agendar tu cita por <a href="' + CONFIG.whatsappLink + '" target="_blank">WhatsApp</a> o el formulario de contacto.',
+            'niños': 'Tenemos odontología infantil especializada. Hacemos que los niños amen ir al dentista. 😊',
+            'urgencia': '¡Atendemos urgencias 7 días! Mándame mensaje por WhatsApp y te damos cita inmediata.',
+            'default': 'No estoy seguro de cómo ayudarte con eso. 😅 Prueba preguntando por "limpieza", "ortodoncia", "precios" o "cita".'
+        };
+
+        function toggleChatbot() {
+            const chatbot = document.getElementById('chatbot');
+            chatbot.classList.toggle('active');
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim().toLowerCase();
+            if (!message) return;
+
+            const messages = document.getElementById('chatMessages');
+            messages.innerHTML += `<div class="message user">${input.value}</div>`;
+            input.value = '';
+
+            setTimeout(() => {
+                let response = chatbotResponses['default'];
+                
+                // Búsqueda inteligente de respuestas
+                for (let key in chatbotResponses) {
+                    if (message.includes(key)) {
+                        response = chatbotResponses[key];
+                        break;
+                    }
+                }
+
+                // Procesar HTML en respuestas
+                response = response.replace(/<strong>(.*?)<\/strong>/g, '<strong>$1</strong>');
+                response = response.replace(/<a.*?>(.*?)<\/a>/g, '$1');
+
+                messages.innerHTML += `<div class="message bot">${response}</div>`;
+                messages.scrollTop = messages.scrollHeight;
+            }, 800);
+        }
+
+        function handleChatEnter(event) {
+            if (event.key === 'Enter') {
+                sendChatMessage();
+            }
+        }
+
+        // ===== FUNCIONES VIRALES =====
+        function generarVIP() {
+            const nombre = prompt('¿Cuál es tu nombre?');
+            const telefono = prompt('¿Tu número de WhatsApp?');
+            
+            if (nombre && telefono) {
+                document.getElementById('vipNombre').textContent = nombre;
+                document.getElementById('vipTelefono').textContent = telefono;
+                document.getElementById('vipCard').classList.add('active');
+                document.getElementById('overlay').style.display = 'block';
+            }
+        }
+
+        function closeVIP() {
+            document.getElementById('vipCard').classList.remove('active');
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function shareVIP() {
+            const nombre = document.getElementById('vipNombre').textContent;
+            const telefono = document.getElementById('vipTelefono').textContent;
+            
+            const mensaje = `¡Ya tengo mi Carnet VIP de Consultorio Dental Sonrisa Perfecta! 😁\n\n` +
+                           `👑 CLIENTE VIP\n` +
+                           `${nombre}\n` +
+                           `Tel: ${telefono}\n\n` +
+                           `✨ 10% DESCUENTO PERMANENTE\n\n` +
+                           `¡Trae un amigo y ambos ganan! 📱 ${CONFIG.whatsappLink}`;
+            
+            window.open(`https://wa.me/?text=${encodeURIComponent(mensaje)}`, '_blank');
+        }
+
+        // ===== FORMULARIO CONTACTO =====
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                telefono: document.getElementById('telefono').value,
+                servicio: document.getElementById('servicio').value,
+                mensaje: document.getElementById('mensaje').value
+            };
+
+            // Simular envío exitoso
+            alert('¡Cita solicitada con éxito! 📅\n\nTe contactaremos en breve por WhatsApp para confirmar.');
+            
+            // En producción, aquí iría el código para enviar por email/API
+            console.log('Datos del formulario:', formData);
+            
+            // Redirigir a WhatsApp
+            const mensaje = `Nueva cita:\nNombre: ${formData.nombre}\nTel: ${formData.telefono}\nServicio: ${formData.servicio}\nMensaje: ${formData.mensaje}`;
+            window.open(`${CONFIG.whatsappLink}?text=${encodeURIComponent(mensaje)}`, '_blank');
+        });
+
+        // ===== FAQ ACORDEÓN =====
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('span:last-child');
+                
+                answer.classList.toggle('active');
+                icon.textContent = answer.classList.contains('active') ? '▲' : '▼';
+            });
+        });
+
+        // ===== OVERLAY =====
+        document.getElementById('overlay').addEventListener('click', closeVIP);
+
+        // ===== SMOOTH SCROLL PARA ANCLAS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ===== ANIMACIONES AL SCROLL =====
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.service-card, .testimonial').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        console.log('🌟 Consultorio Dental Sonrisa Perfecta - Página lista y optimizada para conversiones');
+        console.log('📱 WhatsApp configurado:', CONFIG.whatsappLink);
+        console.log('✨ Elementos virales activos: Carnet VIP + Trae un amigo');
+    </script>
+</body>
+</html>
